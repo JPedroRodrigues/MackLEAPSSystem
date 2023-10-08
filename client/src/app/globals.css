@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Outfit:wght@400;600&display=swap');
+
+:root {
+    /* Color Palette */
+    --red: #E1001E;
+    --silver: #CFD9DF;
+    --slateGrey: #4A6670;
+    --purple: #2E294E;
+
+    /* Dark Mode */
+    --black: #202020;
+    --componentBlack: #2F2F2F;
+
+    /* White mode */
+    --white: #FDFBFB;
+    --componentgrey: #EBEDEE;
+
+    /* Others */
+    --grey: #DFDFDF;
+    --green: #69995D;
+    --coral: #EC2C26;
+    --lightBlue: #60B2E5;
+
+    /* Fonts */
+    --h1: normal 800 80px 'Montserrat', 'Outfit', sans-serif;
+    --h2: normal 700 50px 'Montserrat', 'Outfit', sans-serif;
+    --h3: normal 700 40px 'Montserrat', 'Outfit',
+    sans-serif;
+    --subHeading: normal 20px 600 'Montserrat', 'Outfit', sans-serif; 
+    --bodyText: normal 400 15px 'Outfit', 'Montserrat', sans-serif;
+    --smallH: normal 12px 600 'Outfit', 'Montserrat', sans-serif;
+    --smallBT: normal 10px 400 'Outfit', 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font: var(--bodyText);
+
+    background: var(--grey) url('/Fundo.png') bottom center fixed;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+
+    background-color: #202020;
+    color: white;
+
+    padding: 0px 30px;
+    height: 50px;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+    list-style: none;
+}
