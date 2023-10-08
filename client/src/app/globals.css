@@ -44,7 +44,7 @@ body {
     font: var(--bodyText);
 
     background: var(--grey) url('/Fundo.png') bottom center fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 nav {
@@ -63,98 +63,4 @@ nav > ul {
 
     gap: 30px;
     list-style: none;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 1fr 1000px 1fr;
-    grid-template-rows: 150px;
-    padding: 50px 0px;
-}
-
-h1 {
-    color: var(--red);
-    font: var(--h1);
-}
-
-.userTitle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    grid-column: 2;
-}
-
-.userTable {
-    display: table;
-    background-color: #202020;
-    grid-column: 2;
-    grid-row: 2;
-
-    width: 1000px;
-    border-radius: 30px;
-    margin: auto;
-    padding: 50px;
-
-    color: white;
-}
-
-.tableHeader {
-    display: table-row;
-}
-
-.tableTitle {
-    display: table-cell;
-    text-align: center;
-}
-
-.rowTable {
-    display: table-row;
-}
-
-.userInfo {
-    display: table-cell;
-    text-align: center;
-
-    border-radius: 50px;
-    padding: 9px 20px;
-    border: 10px solid var(--black);
-
-    background-color: var(--grey);
-
-    color: var(--black);
-}
-
-.gear {
-    padding: 0px;
-    background: var(--grey) url("/gear-button.svg") center center no-repeat;
-    background-size: contain;
-}
-
-.redButton {
-    background-color: var(--red);
-    color: var(--white);
-
-    padding: 10px 30px;
-    border-radius: 30px;
-
-}
-
-.blackButton {
-    background-color: var(--black);
-    color: var(--white);
-
-    padding: 10px 30px;
-    border-radius: 30px;
-}
-
-.registerUser {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    grid-row: 3;
-    grid-column: 2;
-
-    margin-top: 10px;
-    text-align: right;
 }
