@@ -10,6 +10,6 @@ export default function User() {
             <div className="privilege--button">Privilégios</div>
         </section>
 
-        <Table data={[...user]} button={"/gear-button.svg"}/>
+        <Table data={[...user]} button={"/icons/gear-button.svg"}/>
     </main>
 }

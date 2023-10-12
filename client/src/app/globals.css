@@ -43,24 +43,41 @@
 body {
     font: var(--bodyText);
 
-    background: var(--grey) url('/Fundo.png') bottom center fixed;
+    background: var(--grey) url('/images/Fundo.png') bottom center fixed;
     background-size: cover;
 }
 
-nav {
-    display: flex;
-
-    background-color: #202020;
-    color: white;
-
-    padding: 0px 30px;
-    height: 50px;
+.h1 {
+    font: var(--h1);
+    color: var(--red);
 }
 
-nav > ul {
-    display: flex;
-    align-items: center;
+.h2 {
+    font: var(--h2);
+    color: var(--red);
+}
 
-    gap: 30px;
-    list-style: none;
+.h3 {
+    font: var(--h3);
+    color: var(--red);
+}
+
+.sub--heading {
+    font: var(--subHeading);
+    color: var(--black);
+}
+
+.body--text {
+    font: var(--bodyText);
+    color: var(--black);
+}
+
+.small--heading {
+    font: var(--smallH);
+    color: var(--black);
+}
+
+.small--btntext {
+    font: var(--smallBT);
+    color: var(--black);
 }
