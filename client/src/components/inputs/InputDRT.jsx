@@ -1,10 +1,11 @@
 export default function InputDRT() {
     return <div className="form--input">
-        <label htmlFor="form--user--drt">DRT </label>
+        <label htmlFor="form--drt">DRT </label>
         <input 
             type="text" 
-            name="form--user--drt" 
-            id="form--user--drt" 
+            name="form--drt" 
+            id="form--drt"
+            className="form-inpt"
             placeholder="DRT"
             required
             // Using RegEx to force user to insert a numeric data

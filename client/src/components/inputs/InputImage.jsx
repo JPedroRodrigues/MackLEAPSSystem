@@ -3,7 +3,6 @@
 import {useState, useEffect} from 'react'
 import Image from 'next/image';
 import Camera from "../../../public/icons/Camera.svg"
-import "../../styles/inputImage.css"
 
 export default function InputImage() {
     const [image, setImage] = useState();
@@ -30,16 +29,17 @@ export default function InputImage() {
         // Avoiding memory leak
         return () => URL.revokeObjectURL(newImageURL);
     }, [image])
-    
+
     return <>
-        <label htmlFor="input--image">
-            <Image 
-                src={imageURL} 
-                alt='Camera Icon'
-                width={75}
-                height={75}
-            ></Image>
-            <input type="file" accept="image/*" onChange={imageChange} id='input--image'/>
-        </label>
+            <label htmlFor="input--image" id="inptimage--label">
+                <Image
+                    src={imageURL}
+                    alt='Camera Icon'
+                    width={280}
+                    height={280}
+                    className="input--icon"
+                ></Image>
+                <input type="file" accept="image/*" onChange={imageChange} id='input--image'/>
+            </label>
     </>
 }

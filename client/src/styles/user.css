@@ -27,8 +27,8 @@ h1 {
     border-radius: 30px;
     padding: 50px;
 
-    color: white;
-    background-color: #202020;
+    color: var(--white);
+    background-color: var(--black);
 }
 
 .tableHeader {

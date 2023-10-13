@@ -5,6 +5,7 @@ export default function InputPassword() {
             type="password" 
             name="form--password" 
             id="form--password"
+            className="form-inpt"
             placeholder="Senha"
             required 
             minLength={8} 

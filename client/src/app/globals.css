@@ -77,7 +77,122 @@ body {
     color: var(--black);
 }
 
-.small--btntext {
+.big--red--btn {
+    cursor: pointer;
+
+    width: 300px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    background-color: var(--red);
     font: var(--smallBT);
-    color: var(--black);
+    color: var(--white);
+}
+
+.big--silver--btn {
+    cursor: pointer;
+
+    width: 300px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    background-color: var(--silver);
+    font: var(--smallBT);
+    color: var(--white);
+}
+
+.big--purple--btn {
+    cursor: pointer;
+
+    width: 300px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    background-color: var(--purple);
+    font: var(--smallBT);
+    color: var(--white);
+}
+
+.big--white--btn {
+    cursor: pointer;
+
+    width: 300px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    background-color: var(--white);
+    font: var(--smallBT);
+    color: var(--white);
+}
+
+.small--red--btn {
+    cursor: pointer;
+
+    width: 150px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    background-color: var(--red);
+    font: var(--smallBT);
+    color: var(--white);
+}
+
+.small--silver--btn {
+    cursor: pointer;
+
+    width: 150px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    background-color: var(--silver);
+    font: var(--smallBT);
+    color: var(--white);
+}
+
+.small--purple--btn {
+    cursor: pointer;
+
+    width: 150px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+
+    background-color: var(--purple);
+    font: var(--smallBT);
+    color: var(--white);
+}
+
+.small--white--btn {
+    cursor: pointer;
+
+    width: 150px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+
+    background-color: var(--white);
+    font: var(--smallBT);
+    color: var(--white);
 }

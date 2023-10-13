@@ -5,6 +5,7 @@ export default function InputEmail() {
             type="email" 
             name="form--email" 
             id="form--email"
+            className="form-inpt"
             placeholder="E-mail"
             max-maxLength={50}
             required
