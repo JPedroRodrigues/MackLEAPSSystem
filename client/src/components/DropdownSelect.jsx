@@ -7,10 +7,11 @@ export default function DropdownSelect(props) {
     const [selectClass, setSelectClass] = useState(false);
     const [caretClass, setCaretClass] = useState(false);
     const [menuClass, setMenuClass] = useState(false);
-    const [selected, setSelected] = useState("Escolha");
-    // Setting a reference
+    const [selected, setSelected] = useState(props.defaultValue ? props.defaultValue : "Escolha");
+    // Setting a reference for divs
     const divRefs = useRef([]);
 
+    // Triggering changes when "Enter" key is pressed
     function handleKeyDown(e, option) {
         if (e.key === "Enter") {
             setSelected(option);
@@ -21,6 +22,7 @@ export default function DropdownSelect(props) {
         }
     }
 
+    // Establishing references for the options of the menu
     function setDivRef(index, ref) {
         divRefs.current[index] = ref;
     }

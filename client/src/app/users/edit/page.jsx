@@ -6,9 +6,12 @@ import InputName from "../../../components/inputs/InputName"
 import InputEmail from "../../../components/inputs/InputEmail"
 import InputDRT from "../../../components/inputs/InputDRT"
 import InputRole from "../../../components/inputs/InputRole"
+
 import "../../../styles/regUser.css"
 
+
 export default function EditUser() {
+
     const styles = {
         formInfo : {
             alignItems: "center"
@@ -32,9 +35,15 @@ export default function EditUser() {
             marginTop: "1em"
         }
     }
+
+    function editUser() {
+        console.log("Usuário editado com sucesso.");
+    }
+
     return <main>
         <h1 className="h1">Usuários</h1>
-        <div className="user--form">
+
+        <form action="" method="post" autoComplete="off" onSubmit={editUser} className="user--form">
             <div className="form--info" style={styles.formInfo}>
                 <InputImage />
                 <div className="form--col">
@@ -51,6 +60,6 @@ export default function EditUser() {
                 <button className="big--red--btn">EDITAR SENHA</button>
                 <input type="submit" value="CONCLUIR EDIÇÃO" className="big--red--btn"/>
             </div>
-        </div>
+        </form>
     </main>
 }

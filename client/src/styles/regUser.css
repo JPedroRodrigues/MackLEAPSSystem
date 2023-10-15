@@ -47,6 +47,7 @@ main {
     gap: 1.438em;
 }
 
+/* Dropdown Style */
 .dropdown {
     min-width: 15em;
     position: relative;

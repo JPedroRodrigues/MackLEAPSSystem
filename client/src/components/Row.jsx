@@ -1,4 +1,5 @@
 import RowInfo from "./RowInfo";
+import Link from "next/link";
 
 export default function Row(props) {
     let rows = [];
@@ -7,6 +8,6 @@ export default function Row(props) {
     }
     return <div className="rowTable">
         {rows}
-        <img src={props.button} alt="Table button" className="rowButton" />
+        <Link href={"/users/edit"}><img src={props.button} alt="Table button" className="rowButton" /></Link>
     </div>
 }
