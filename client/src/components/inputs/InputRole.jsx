@@ -30,6 +30,6 @@ export default function InputRole(props) {
 
     return <div className="form--input" style={styles.container}>
         <label htmlFor="form--role" style={styles.label}>CARGO</label>
-        <DropdownSelect option={options} id="form--role" onRoleChange={props.onRoleChange}/>
+        <DropdownSelect option={options} id="form--role" onItemsChange={props.onRoleChange}/>
     </div>
 }

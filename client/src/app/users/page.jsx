@@ -10,7 +10,7 @@ import user from "../../lib/user.js"
 
 export default function User() {
     const [usersData, setUsersData] = useState(user);
-    
+
     let options = [
         "Todos",
         "Administrador",
@@ -35,7 +35,7 @@ export default function User() {
     return <main>
         <section className="userTitle">
             <h1 className="h1">Usuários</h1>
-            <DropdownSelect defaultValue="Privilégios" option={options} onRoleChange={onRoleChange}/>
+            <DropdownSelect defaultValue="Privilégios" option={options} onItemsChange={onRoleChange}/>
         </section>
         <Table data={[...usersData]} button={"/icons/gear-button.svg"}/>
         <Link href="/users/register" className="big--red--btn reg--user">REGISTRAR USUÁRIO</Link>

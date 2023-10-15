@@ -41,7 +41,7 @@ export default function DropdownSelect(props) {
                 setCaretClass(prevCaretClass => !prevCaretClass);
                 setMenuClass(prevMenuClass => !prevMenuClass);
                 setSelectClass(prevSelectClass => !prevSelectClass);
-                props.onRoleChange && props.onRoleChange(item);
+                props.onItemsChange && props.onItemsChange(item);
             }}
             onKeyDown={e => handleKeyDown(e, item)}
             tabIndex={0}
