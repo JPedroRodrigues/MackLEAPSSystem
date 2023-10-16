@@ -46,6 +46,7 @@ export default function DropdownSelect(props) {
             onKeyDown={e => handleKeyDown(e, item)}
             tabIndex={0}
             ref={el => setDivRef(++i, el)}
+            key={item}
             >
             {item}
         </li>

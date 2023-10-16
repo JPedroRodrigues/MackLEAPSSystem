@@ -1,4 +1,4 @@
-export default [
+const userData = [
     {
         nome: "Pedrin",
         cargo: "Administrador",
@@ -23,4 +23,6 @@ export default [
         registro: "10/10/2023",
         status: "online"
     }
-]
+];
+
+export default userData;

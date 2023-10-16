@@ -1,6 +1,6 @@
 "use client"
 
-import {useState, useEffect} from 'react'
+import {useState } from 'react'
 import Image from 'next/image';
 import Camera from "../../../public/icons/Camera.svg"
 
@@ -14,22 +14,15 @@ export default function InputImage(props) {
             return
         }
 
-        setImage(e.target.files[0])
-    }
-
-    useEffect(() => {
-        if (!image) {
-            setImageURL(Camera);
-            return;
-        }
+        setImage(e.target.files[0]);
         
-        const newImageURL = URL.createObjectURL(image);
+        const newImageURL = URL.createObjectURL(e.target.files[0]);
         setImageURL(newImageURL);
         props.onImageChange && props.onImageChange(newImageURL);
 
         // Avoiding memory leak
         return () => URL.revokeObjectURL(newImageURL);
-    }, [image])
+    }
 
     const styles = {
         image: {
@@ -50,6 +43,8 @@ export default function InputImage(props) {
         },
     }
 
+    // props.onImageChange(imageURL);
+
     return <>
             <label htmlFor="input--image" id="inptimage--label" style={styles.label}>
                 {
@@ -58,9 +53,10 @@ export default function InputImage(props) {
                         <Image 
                             src={props.defaultImg? props.defaultImg : Camera} 
                             width={280} 
-                            height={280}></Image>
+                            height={280}
+                            alt="User picture"></Image>
                 }
-                <input type="file" style={styles.input} accept="image/*" onChange={imageChange} id='input--image' required/>
+                <input type="file" style={styles.input} accept="image/*" onChange={imageChange} id='input--image' required />
             </label>
     </>
 }
