@@ -1,0 +1,33 @@
+<svg width="75" height="57" viewBox="0 0 75 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo Mack" filter="url(#filter0_d_362_6802)">
+<g clip-path="url(#clip0_362_6802)">
+<g id="layer1">
+<path id="path4268-3-7-3" fill-rule="evenodd" clip-rule="evenodd" d="M0.000488281 29.3999L16.7506 19.5999L0.000488281 49V29.3999Z" fill="#808080"/>
+<path id="path4264-7-5-0" fill-rule="evenodd" clip-rule="evenodd" d="M33.4997 29.3999V49L16.7496 39.1999L16.7495 19.5999L33.4997 29.3999Z" fill="#464646"/>
+<path id="path4270-4-3-7" fill-rule="evenodd" clip-rule="evenodd" d="M50.2494 19.5999L33.4993 49V29.3999L50.2494 19.5999Z" fill="#808080"/>
+<path id="path4272-5-5-8" fill-rule="evenodd" clip-rule="evenodd" d="M50.2494 19.5999V39.1999L33.4993 49L50.2494 19.5999Z" fill="#686868"/>
+<path id="path4274-2-6-6" fill-rule="evenodd" clip-rule="evenodd" d="M50.2493 19.5999L66.9994 29.3999V49L50.2493 39.1999V19.5999Z" fill="#464646"/>
+<path id="path4256-5-2-8" fill-rule="evenodd" clip-rule="evenodd" d="M16.7502 0L0 9.80001L16.7502 19.6L33.5003 9.80001L16.7502 0Z" fill="#E1001E"/>
+<path id="path4254-4-9-8" fill-rule="evenodd" clip-rule="evenodd" d="M33.4998 9.79999L16.7496 19.6L33.4998 29.4L50.2499 19.6L33.4998 9.79999Z" fill="#E1001E"/>
+<path id="path4260-7-1-4" fill-rule="evenodd" clip-rule="evenodd" d="M33.4998 9.80001L50.2499 0L67.0001 9.80001L50.2499 19.6L33.4998 9.80001Z" fill="#E1001E"/>
+<path id="path4258-4-2-3" fill-rule="evenodd" clip-rule="evenodd" d="M0.000488281 9.79999L16.7506 19.6L0.000488281 29.4V9.79999Z" fill="#474747"/>
+<path id="path4262-4-7-1" fill-rule="evenodd" clip-rule="evenodd" d="M66.999 9.79999V29.4L50.2488 19.6L66.999 9.79999Z" fill="#ABABAB"/>
+<path id="path4266-3-0-4" fill-rule="evenodd" clip-rule="evenodd" d="M16.7501 19.5999L16.7502 39.1999L0 49L16.7501 19.5999Z" fill="#686868"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_362_6802" x="0" y="0" width="75" height="57" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_362_6802"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_362_6802" result="shape"/>
+</filter>
+<clipPath id="clip0_362_6802">
+<rect width="67" height="49" fill="white"/>
+</clipPath>
+</defs>
+</svg>

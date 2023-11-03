@@ -1,0 +1,100 @@
+.navbar-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.navbar-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+}
+
+.navbar-colaboradores-btn h2,
+.navbar-users-btn h2,
+.navbar-publi-btn h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.navbar-users-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: ease 300ms;
+  cursor: pointer;
+  height: 65px;
+  width: 141px;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-colaboradores-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: ease 300ms;
+  cursor: pointer;
+  height: 65px;
+  width: 221px;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-publi-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  transition: ease 300ms;
+  cursor: pointer;
+  height: 65px;
+  width: 171px;
+}
+
+.publi-list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  opacity: 1;
+  transition: ease-in-out 500ms all;
+
+  background-color: #202020;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  z-index: 1;
+}
+
+.publi-list button {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 10px 31px;
+
+  transition: ease 300ms;
+  cursor: pointer;
+  border-top: 2px solid #686868;
+}
+
+.publi-list button:nth-child(4) {
+  padding-bottom: 0.5rem;
+  border-radius: inherit;
+}
+
+.publi-list button:hover {
+  background-color: #e1001e;
+}
