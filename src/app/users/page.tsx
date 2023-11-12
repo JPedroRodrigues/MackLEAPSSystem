@@ -10,13 +10,21 @@ import { useState } from "react";
 import {
     Table,
     TableBody,
-    TableCaption,
     TableCell,
     TableHead,
     TableHeader,
     TableRow,
-  } from "@/components/ui/table"
-
+} from "@/components/ui/table"
+import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectLabel,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
+  
 import user from "@/lib/user"
 
 export default function User() {
@@ -27,6 +35,20 @@ export default function User() {
         <main className="grid grid-cols-[1fr_1fr_1fr] grid-rows-[9.375em 1fr 9.375em] bg-background">
             <section className="flex justify-between row-start-1 col-start-2">
                 <h1 className="self-baseline text-5xl font-extrabold text-primary">Usuários</h1>
+                <Select>
+                    <SelectTrigger className="w-[180px]">
+                        <SelectValue placeholder="Selecione um cargo" />
+                    </SelectTrigger>
+                    <SelectContent>
+                        <SelectGroup>
+                        <SelectLabel>Cargo</SelectLabel>
+                        <SelectItem value="administrador">Administrador</SelectItem>
+                        <SelectItem value="professor">Professor</SelectItem>
+                        <SelectItem value="estagiario">Estagiário</SelectItem>
+                        </SelectGroup>
+                    </SelectContent>
+                </Select>
+
             </section>
             {/* <Table data={[...usersData]} button={<Settings className="p-0 rounded-full w-7"/>}/> */}
 
