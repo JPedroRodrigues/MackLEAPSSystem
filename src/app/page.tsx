@@ -1,7 +1,10 @@
+import Nav from "@/components/Nav"
+
 export default function Home() {
-    return (
-        <main>
-            <h1 className="text-primary">Home seet home</h1>
-        </main>
-    )
+    return (<>
+            <Nav />
+            <main>
+                <h1 className="text-primary">Home seet home</h1>
+            </main>
+    </>)
 }

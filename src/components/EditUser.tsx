@@ -18,7 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Camera } from 'lucide-react';
 
-export default function UserForm() {
+export default function EditUser() {
     const [filebase64,setFileBase64] = useState<string>("");
 
     function convertFile(files: FileList|null) {
@@ -116,7 +116,7 @@ export default function UserForm() {
     return (<>
         <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                <div className="grid grid-cols-3 grid-rows-[1fr_20px] gap-12">
+                <div className="flex items-center gap-12">
                     <div className="self-center">
                         <FormField
                                 control={form.control}
@@ -178,22 +178,6 @@ export default function UserForm() {
                     <div className="flex flex-col align-center justify-center gap-5">
                         <FormField
                             control={form.control}
-                            name="password"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel>Password</FormLabel>
-                                    <FormControl>
-                                        <Input type="password" placeholder="Senha" {...field} className="w-80" />
-                                    </FormControl>
-                                    <FormDescription>
-                                        Senha de acesso.
-                                    </FormDescription>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
                             name="drt"
                             render={({ field }) => (
                                 <FormItem>
@@ -225,7 +209,11 @@ export default function UserForm() {
                             )}
                         />
                     </div>
-                    <Button type="submit" className="col-start-3 row-start-2 justify-self-end">Registrar usuário</Button>
+                </div>
+                <div className="flex justify-evenly items-center">
+                    <Button type="submit" className="col-start-3 row-start-2 justify-self-end" variant={"secondary"}>Deletar usuário</Button>
+                    <Button type="submit" className="col-start-3 row-start-2 justify-self-end">Resetar senha</Button>
+                    <Button type="submit" className="col-start-3 row-start-2 justify-self-end">Concluir edição</Button>
                 </div>
             </form>
         </Form>
